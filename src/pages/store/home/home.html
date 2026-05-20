@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Food Store - Catálogo</title>
+        <link rel="stylesheet" href="/src/pages/store/home/home.css" />
+    </head>
+    <header class="display-header">
+        <h1>🍔 Food Store</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Mis Pedidos</a>
+            <a href="../cart/cart.html">Carrito</a>
+            <a href="admin.html">Panel Admin</a>
+        </nav>
+    </header>
+    <main>
+        <body>
+            <div
+                style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                "
+            >
+                <h1 class="justificar-alcentro">Catálogo de Productos</h1>
+                <input
+                    class="claseinput justificar-alcentro"
+                    type="text"
+                    id="searchInput"
+                    placeholder="Buscar producto..."
+                />
+            </div>
+            <h2 class="justificar-alcentro">Categorias</h2>
+            <ul class="categorias_ordenadas" id="categories"></ul>
+            <section id="productList"></section>
+            <script type="module" src="./home.ts"></script>
+        </body>
+    </main>
+    <footer>
+        <p>© 2024 Food Store. Todos los derechos reservados.</p>
+        <ul>
+            <li>Sucursal en Don Bosco - Av. San Martin 250</li>
+            <li>mail de contacto: foodstore@gmail.com</li>
+            <li>telefono: +54 91111111111</li>
+            <li>Horarios: Martes a Domingo: 11hs a 00hs</li>
+        </ul>
+    </footer>
+</html>
