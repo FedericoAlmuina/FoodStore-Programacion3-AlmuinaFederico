@@ -44,6 +44,8 @@ pnpm run dev
 El servidor estará disponible en:
 http://localhost:5173
 
-LINK DEL VIDEO DE EXPLICACION:
-
 Repositorio de referencia:
+https://github.com/FedericoAlmuina/FoodStore-Programacion3-AlmuinaFederico
+
+LINK DEL VIDEO DE EXPLICACION:
+https://youtu.be/H8anE5Jq3Fw

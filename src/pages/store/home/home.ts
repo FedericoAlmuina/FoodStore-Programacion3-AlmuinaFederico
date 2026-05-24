@@ -15,11 +15,11 @@ function renderProducts(products: Product[]) {
         const card = document.createElement("div");
         card.classList.add("card");
         card.innerHTML = `
-      <h3>${p.nombre}</h3>
-      <img class="claseimg" src=${p.imagen}>
-      <p>Precio: $${p.precio}</p>
-      <p>${p.descripcion}</p>
-      <button class="claseboton" data-id="${p.id}">Agregar al carrito</button>
+    <h3>${p.nombre}</h3>
+    <img class="claseimg" src=${p.imagen}>
+    <p>Precio: $${p.precio}</p>
+    <p>${p.descripcion}</p>
+    <button class="claseboton" data-id="${p.id}">Agregar al carrito</button>
     `;
         productList.appendChild(card);
     });
@@ -31,22 +31,6 @@ function renderProducts(products: Product[]) {
         });
     });
 }
-
-/* function renderCategories() {
-    const categories = getCategories();
-    categoriesContainer.innerHTML = categories
-        .map(
-            (c) =>
-                `<button class=" claseboton justificar-alcentro">${c}</button>`,
-        )
-        .join("");
-    categoriesContainer.querySelectorAll("button").forEach((btn) => {
-        btn.addEventListener("click", () => {
-            const cat = btn.textContent!;
-            renderProducts(productos.filter((p) => p.categoria === cat));
-        });
-    });
-} */
 
 function renderCategories() {
     const categories = getCategories();
